@@ -12,6 +12,10 @@ function toCelcius(fahrenheit) {
     return celcius;
   }
 
+  console.log(toCelcius(32));
+    console.log(toCelcius(212));
+    console.log(toCelcius(50));
+
 
 
 
@@ -27,3 +31,13 @@ class User {
       this.username = username;
       this.password = password;
     }
+
+    changePassword(oldPassword, newPassword) {
+        if (oldPassword === this.password) {
+            this.password = newPassword;
+        } else {
+            console.log('Wrong password');
+        }
+        }
+
+};

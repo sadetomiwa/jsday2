@@ -10,7 +10,7 @@
 function toCelcius(fahrenheit) {
     let celcius = (fahrenheit - 32) * (5 / 9);
     return celcius;
-  }
+  };
 
   console.log(toCelcius(32));
     console.log(toCelcius(212));

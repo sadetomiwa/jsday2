@@ -38,6 +38,22 @@ class User {
         } else {
             console.log('Wrong password');
         }
-        }
+    }
 
 };
+
+/*
+    Exercise 3: Write a function that takes in an array of integers and returns
+    an array of the negative integers squared using Array methods
+    Ex 1. squareNegatives([-10, -3, 4, -2, 8, 9, -3]) // [100, 9, 4, 9]
+    Ex 2. squareNegatives([-5, -4, -3, -2, -1, 1, 2, 3, 4, 5]) // [25, 16, 9, 4, 1]
+    Ex 3. squareNegatives([2, 4, 6, 8, 10]) // []
+*/
+
+function squareNegatives(arr) {
+    let negatives = arr.filter(num => num < 0);
+    let squared = negatives.map(num => num * num);
+    return squared;
+};
+
+console.log(squareNegatives([-10, -3, 4, -2, 8, 9, -3]));
